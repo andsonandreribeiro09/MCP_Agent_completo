@@ -1,8 +1,7 @@
-# client.py
 import requests
 
 class MCPClient:
-    def __init__(self, url="http://127.0.0.1:8000"):
+    def __init__(self, url):
         self.url = url
 
     def call_tool(self, tool_name, input_data):

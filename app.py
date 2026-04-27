@@ -4,8 +4,7 @@ import time
 import os
 
 # Inicializa MCP Client
-client = MCPClient()
-
+client = MCPClient("https://seu-server.onrender.com")  # 👈 AQUI
 # =========================
 # 🤖 AGENT
 # =========================

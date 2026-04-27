@@ -1,0 +1,39 @@
+# 📘 Demonstração prática: Como funciona o MCP
+
+## ❓ Pergunta do usuário
+**"Como funciona o MCP?"**
+
+---
+
+## 🔄 Passo a passo da execução
+
+### 1. 👤 Usuário
+O usuário faz a pergunta na interface 
+
+➡️ Exemplo:
+`Como funciona o MCP?`
+
+---
+
+### 2. 🤖 Agent
+- Recebe a pergunta  
+- Analisa o texto  
+- Identifica a intencao  
+
+---
+
+### 3. 🧠 Decisão
+O Agent decide a acao:
+
+👉 Usar a tool `ler_arquivo`
+
+---
+
+### 4. 🔌 MCP Client
+Envia requisição:
+
+```json
+{
+  "tool_name": "ler_arquivo",
+  "input": "dados.txt"
+}
